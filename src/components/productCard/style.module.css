@@ -1,0 +1,122 @@
+.product_thumb .product_thumb_img {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.product_thumb_img img:hover {
+  transform: scale(1.03);
+}
+.product_thumb .product_thumb_img img {
+  display: block;
+  max-width: 100%;
+  height: 300px;
+  object-fit: contain;
+  transition: ease-in-out 0.4s;
+}
+.product_thumb {
+  border: 1px solid #f3f5f7;
+  position: relative;
+  padding: 10px;
+}
+.product_content {
+  margin-top: 12px;
+  margin-bottom: 15px;
+}
+.product_content_rating {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-bottom: 4px;
+}
+.product_name a {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  color: #141718;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.product_price {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  color: #121212;
+}
+.product_card .new {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+  color: #121212;
+  padding: 4px 14px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+.product_card .wishlist {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  box-shadow: 0 8px 16px #0f0f0f1f;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  visibility: hidden;
+  opacity: 0;
+  transition: ease-in-out 0.5s;
+}
+.wishlist button {
+  border: none;
+  background-color: transparent;
+}
+.product_card .btn {
+  padding: 0 16px;
+  position: absolute;
+  width: 100%;
+  transition: ease-in-out 0.5s;
+  top: 246px;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+}
+.product_card:hover.product_card .btn,
+.product_card:hover.product_card .wishlist {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .product_card {
+    padding-bottom: 20px;
+  }
+  .product_name a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+@media (max-width: 425px) {
+  .product_thumb .product_thumb_img img {
+    height: 180px;
+  }
+  .product_card .btn {
+    padding: 0 16px;
+    position: absolute;
+    width: 100%;
+    transition: ease-in-out 0.5s;
+    top: 137px;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+  }
+}

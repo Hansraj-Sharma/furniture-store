@@ -1,0 +1,253 @@
+.cartBox {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 54px;
+  font-weight: 500;
+  line-height: 58px;
+  letter-spacing: -1px;
+  text-align: center;
+
+  margin-bottom: 40px;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+}
+
+.step {
+  font-size: 18px;
+  color: #b0b0b0;
+  padding: 0px 30px;
+  padding-bottom: 26px;
+}
+.step:nth-child(1) {
+  border-bottom: 2px solid #141718;
+}
+
+.step span {
+  background-color: #6c7275;
+  padding: 5px 12px;
+  border-radius: 100%;
+  color: #fff;
+}
+
+.active {
+  color: #000;
+  font-weight: bold;
+}
+
+.cartContent {
+  padding: 80px 0;
+}
+
+.cartTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cartTable th,
+.cartTable td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.imgbox img {
+  width: 80px;
+  height: 90px;
+  object-fit: contain;
+}
+
+.p_detile p:nth-child(1),
+.p_detile p:nth-child(2) {
+  margin-bottom: 8px;
+}
+
+.p_detile {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 200px;
+}
+
+.removeBtn {
+  background: none;
+  border: none;
+  color: #999;
+  cursor: pointer;
+  padding: 0;
+}
+
+.quantityControl {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  border: 1px solid #6c7275;
+  border-radius: 4px;
+}
+
+.quantityControl button {
+  border: none;
+  background: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.checkout_btn {
+  width: 100%;
+}
+
+.quantityControl span {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0 10px;
+}
+
+.cartSummary {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.cartSummary h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.cs_option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 16px;
+  border: 1px solid #141718;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.cs_label {
+  flex: 1;
+}
+
+.total p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  margin-bottom: 12px;
+  padding: 12px;
+}
+
+.checkoutBtn {
+  width: 100%;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.couponSection {
+  margin-top: 40px;
+}
+.couponSection h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+}
+.couponSection p {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #6c7275;
+}
+
+.couponInput {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 12px 16px;
+}
+
+.couponInput input {
+  border: none;
+  outline: none;
+  flex: 1;
+}
+
+.couponInput button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.cart_items {
+  display: none;
+}
+.product_quotient {
+  display: flex;
+  align-items: center;
+  border: 1px solid #6c7275;
+  border-radius: 8px;
+  gap: 12px;
+  padding: 4px 0;
+  justify-content: center;
+  width: 100px;
+}
+.product_quotient span {
+  font-size: 24px;
+  cursor: pointer;
+}
+.product_quotient button {
+  border: none;
+  background-color: transparent;
+}
+.product_count {
+  width: 41px;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+}
+.product_quotient input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.product_count:focus {
+  border: none;
+  outline: none;
+}
+@media (max-width: 425px) {
+  .step {
+    padding: 0 12px;
+  }
+}
+@media (max-width: 992px) {
+  .ct_items {
+    display: none;
+  }
+  .ct_head {
+    display: none;
+  }
+  .cart_items {
+    display: block;
+  }
+}

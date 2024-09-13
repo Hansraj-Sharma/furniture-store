@@ -1,0 +1,22 @@
+select {
+  appearance: none;
+  background-image: url("../../assets/option-img.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  max-width: 262px;
+  width: 100%;
+  padding: 8px;
+}
+select {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  text-align: left;
+}
+label {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  text-align: left;
+  color: #6c7275;
+}

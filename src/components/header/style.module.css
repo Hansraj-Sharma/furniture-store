@@ -1,0 +1,137 @@
+.main_nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background-color: #141718;
+  gap: 12px;
+  padding: 8px 0;
+}
+.topbar span {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: center;
+}
+.navbar {
+  padding: 16px 0;
+  background-color: #febf4e;
+  position: sticky;
+  top: 0;
+  z-index: 15;
+}
+
+.menubar a {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.menubar {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  justify-content: center;
+}
+.nav_logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.nav_btn,
+.cart_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hb_icon {
+  display: none;
+}
+.nav_icon {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: end;
+}
+.nav_icon button {
+  border: none;
+  background-color: transparent;
+}
+.white {
+  background-color: white;
+}
+.black {
+  color: #343839;
+}
+.light_brown {
+  background-color: #f3f5f7;
+}
+.cart_btn {
+  position: relative;
+}
+.cart_btn span {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #141718;
+  position: absolute;
+  left: 18px;
+  top: -14px;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clsMenu {
+  display: none;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 9;
+}
+@media (max-width: 992px) {
+  .navbar {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .hb_icon {
+    display: block;
+    cursor: pointer;
+  }
+  .btn,
+  .nav_btn {
+    display: none;
+  }
+  .nav_logo,
+  .nav_icon {
+    width: auto !important;
+    justify-content: space-between;
+  }
+
+  .menubar {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #fff;
+    padding-top: 50px;
+    z-index: 9;
+  }
+
+  .menuOpen {
+    display: block;
+  }
+  .clsMenu {
+    display: block;
+  }
+}

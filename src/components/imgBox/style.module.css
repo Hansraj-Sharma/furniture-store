@@ -1,0 +1,14 @@
+.img_box {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+.img_box img {
+  display: block;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .img_box {
+    margin-bottom: 20px;
+  }
+}

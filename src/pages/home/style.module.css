@@ -1,0 +1,14 @@
+.img_box {
+  margin-top: 40px;
+}
+.logo_main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+@media (max-width: 992px) {
+  .logo_main {
+    flex-wrap: wrap;
+  }
+}

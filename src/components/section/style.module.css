@@ -1,0 +1,25 @@
+.white {
+  background-color: #fff;
+}
+
+.pt-50 {
+  padding-top: 50px;
+}
+.pt-60 {
+  padding-top: 60px;
+}
+.pb-50 {
+  padding-bottom: 50px;
+}
+.pb-30 {
+  padding-bottom: 30px;
+}
+.py-25 {
+  padding: 25px 0;
+}
+.py-40 {
+  padding: 40px 0;
+}
+.py-48 {
+  padding: 40px 0;
+}
